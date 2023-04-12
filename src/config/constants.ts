@@ -178,9 +178,9 @@ export const courses: CourseType[] = [
 		reviewAvarage: 4.5,
 		reviewCount: 200,
 		author: {
-			firstName: 'Orif',
-			lastName: 'Sarniyozov',
-			avatar: 'https://cdn.dribbble.com/users/33271/screenshots/3975282/media/e803cde680942ba882d6e8db8cb79071.gif',
+			firstName: 'Samar',
+			lastName: 'Badriddinov',
+			avatar: 'https://media.graphassets.com/NfxHACAlR4CkvdhnB3gs',
 		},
 	},
 	{
@@ -193,9 +193,9 @@ export const courses: CourseType[] = [
 		reviewAvarage: 4.5,
 		reviewCount: 250,
 		author: {
-			firstName: 'Orif',
-			lastName: 'Sarniyozov',
-			avatar: 'https://cdn.dribbble.com/users/33271/screenshots/3975282/media/e803cde680942ba882d6e8db8cb79071.gif',
+			firstName: 'Samar',
+			lastName: 'Badriddinov',
+			avatar: 'https://media.graphassets.com/NfxHACAlR4CkvdhnB3gs',
 		},
 	},
 	{
@@ -208,9 +208,9 @@ export const courses: CourseType[] = [
 		reviewAvarage: 4.5,
 		reviewCount: 150,
 		author: {
-			firstName: 'Orif',
-			lastName: 'Sarniyozov',
-			avatar: 'https://cdn.dribbble.com/users/33271/screenshots/3975282/media/e803cde680942ba882d6e8db8cb79071.gif',
+			firstName: 'Samar',
+			lastName: 'Badriddinov',
+			avatar: 'https://media.graphassets.com/NfxHACAlR4CkvdhnB3gs',
 		},
 	},
 	{
@@ -223,9 +223,9 @@ export const courses: CourseType[] = [
 		reviewAvarage: 5,
 		reviewCount: 250,
 		author: {
-			firstName: 'Orif',
-			lastName: 'Sarniyozov',
-			avatar: 'https://cdn.dribbble.com/users/33271/screenshots/3975282/media/e803cde680942ba882d6e8db8cb79071.gif',
+			firstName: 'Samar',
+			lastName: 'Badriddinov',
+			avatar: 'https://media.graphassets.com/NfxHACAlR4CkvdhnB3gs',
 		},
 	},
 	{
@@ -238,9 +238,9 @@ export const courses: CourseType[] = [
 		reviewAvarage: 4.9,
 		reviewCount: 120,
 		author: {
-			firstName: 'Orif',
-			lastName: 'Sarniyozov',
-			avatar: 'https://cdn.dribbble.com/users/33271/screenshots/3975282/media/e803cde680942ba882d6e8db8cb79071.gif',
+			firstName: 'Samar',
+			lastName: 'Badriddinov',
+			avatar: 'https://media.graphassets.com/NfxHACAlR4CkvdhnB3gs',
 		},
 	},
 	{
@@ -253,9 +253,9 @@ export const courses: CourseType[] = [
 		reviewAvarage: 5,
 		reviewCount: 250,
 		author: {
-			firstName: 'Orif',
-			lastName: 'Sarniyozov',
-			avatar: 'https://cdn.dribbble.com/users/33271/screenshots/3975282/media/e803cde680942ba882d6e8db8cb79071.gif',
+			firstName: 'Samar',
+			lastName: 'Badriddinov',
+			avatar: 'https://media.graphassets.com/NfxHACAlR4CkvdhnB3gs',
 		},
 	},
 ];
@@ -288,5 +288,36 @@ export const booksCategory = [
 	{
 		label: 'filter_lifestyle',
 		id: 'lifestyle',
+	},
+];
+
+export const faq = [
+	{
+		question: 'faq_question_1',
+		answer: 'faq_answer_1',
+	},
+	{
+		question: 'faq_question_2',
+		answer: 'faq_answer_2',
+	},
+	{
+		question: 'faq_question_3',
+		answer: 'faq_answer_3',
+	},
+	{
+		question: 'faq_question_4',
+		answer: 'faq_answer_4',
+	},
+	{
+		question: 'faq_question_5',
+		answer: 'faq_answer_5',
+	},
+	{
+		question: 'faq_question_6',
+		answer: 'faq_answer_6',
+	},
+	{
+		question: 'faq_question_7',
+		answer: 'faq_answer_7',
 	},
 ];
