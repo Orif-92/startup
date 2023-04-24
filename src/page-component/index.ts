@@ -6,7 +6,8 @@ export { default as BecomeInstructorPageComponent } from './become-instructor-pa
 export { default as BooksPageComponent } from './books-page-component/books-page-component';
 export { default as ContactPageComponent } from './contact-page-component/contact-page-component';
 export { default as CoursesPageComponent } from './courses-page-component/courses-page-component';
-export { default as DetailedCourseComponent } from './become-instructor-page-component/become-instructor-page-component';
+export { default as DetailedCourseComponent } from './courses-page-component/detailed-course-component';
 export { default as FaqPageComponent } from './faq-page-component/faq-page-component';
 export { default as HomePageComponent } from './home-page-component/home-page-component';
+export { default as StudentsPageComponent } from './instructor-page-component/students-page-component';
 export { default as PricingPageComponent } from './pricing-page-component/pricing-page-component';
