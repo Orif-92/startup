@@ -7,12 +7,10 @@ const AuthPage = () => {
 
 	return (
 		<Seo
-			metaTitle={
-				`Orif | ${t('auth_page_title', { ns: 'seo' })}` || 'Orif | Auth'
-			}
+			metaTitle={`Sammi | ${t('auth_page_title', { ns: 'seo' })}` || 'Sammi | Auth'}
 			metaDescription={
-				`Orif | ${t('auth_page_description', { ns: 'seo' })}` ||
-				'Login or create your account for using Orif platform'
+				`Sammi | ${t('auth_page_description', { ns: 'seo' })}` ||
+				'Login or create your account for using sammi platform'
 			}
 		>
 			<AuthPageComponent />

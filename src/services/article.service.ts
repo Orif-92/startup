@@ -66,3 +66,4 @@ export const Articles = {
 		return result.article;
 	},
 };
+

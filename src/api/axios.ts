@@ -3,7 +3,7 @@ import Cookies from 'js-cookie';
 import { API_URL } from 'src/config/api.config';
 import { errorCatch } from 'src/helpers/api.helper';
 import { removeTokensCookie } from 'src/helpers/auth.helper';
-import { AuthService } from 'src/services/article.service';
+import { AuthService } from 'src/services/auth.service';
 
 const $axios = axios.create({
 	baseURL: API_URL,
