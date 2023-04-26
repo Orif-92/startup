@@ -1,4 +1,5 @@
 export interface CourseType {
+	previewImage: any;
 	slug: string;
 	image: string;
 	title: string;
