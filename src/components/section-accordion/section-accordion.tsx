@@ -13,6 +13,7 @@ import {
 	useToast,
 } from '@chakra-ui/react';
 import { DragEvent } from 'react';
+import { useTranslation } from 'react-i18next';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { MdDelete, MdEdit } from 'react-icons/md';
 import { useActions } from 'src/hooks/useActions';
@@ -29,10 +30,11 @@ const SectionAccordion = ({
 	onOpen,
 }: SectionAccordionProps) => {
 	const { isOpen, onToggle } = useDisclosure();
-	const { deleteSection, clearSectionError, getSection, dragSection } = useActions();
+	const { deleteSection, clearSectionError, dragSection } = useActions();
 	const { error, isLoading, sections } = useTypedSelector(state => state.section);
 	const { course } = useTypedSelector(state => state.instructor);
 	const toast = useToast();
+	const { t } = useTranslation();
 
 	const onDelete = () => {
 		const isAgree = confirm('Are you sure?');
@@ -42,10 +44,10 @@ const SectionAccordion = ({
 				sectionId: section._id,
 				courseId: course?._id,
 				callback: () => {
-					toast({ title: 'Successfully deleted section', position: 'top-right', isClosable: true });
-					getSection({
-						courseId: course?._id,
-						callback: () => {},
+					toast({
+						title: t('successfully_deleted', { ns: 'instructor' }),
+						position: 'top-right',
+						isClosable: true,
 					});
 				},
 			});
@@ -71,12 +73,7 @@ const SectionAccordion = ({
 		dragSection({
 			sections: editedIdx,
 			courseId: course?._id,
-			callback: () => {
-				getSection({
-					courseId: course?._id,
-					callback: () => {},
-				});
-			},
+			callback: () => {},
 		});
 	};
 
@@ -123,11 +120,13 @@ const SectionAccordion = ({
 						_hover={{ textDecoration: 'underline' }}
 						onClick={onToggle}
 					>
-						{isOpen ? 'Close form' : 'Create lesson'}
+						{isOpen
+							? t('close_form', { ns: 'instructor' })
+							: t('create_lesson', { ns: 'instructor' })}
 					</Button>
 				</Center>
 				<Collapse in={isOpen} animateOpacity>
-					<LessonForm sectionId={section._id} />
+					<LessonForm sectionId={section._id} onToggle={onToggle} />
 				</Collapse>
 			</AccordionPanel>
 		</AccordionItem>
