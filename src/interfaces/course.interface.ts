@@ -20,6 +20,7 @@ export interface CourseType {
 	isActive: boolean;
 }
 export interface AuthorType {
-	fullName: string;
+	firstName: string;
+	lastName: string;
 	avatar: string;
 }

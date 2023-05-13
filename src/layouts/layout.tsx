@@ -1,9 +1,8 @@
 import { Box, Container } from '@chakra-ui/react';
 import { FunctionComponent, useState } from 'react';
-import AppProvider from 'src/provider/app.provider';
 import Footer from './footer/footer';
 import Header from './header/header';
-import { AppProviderProps, LayoutProps } from './layout.props';
+import { LayoutProps } from './layout.props';
 import Sidebar from './sidebar/sidebar';
 
 const Layout = ({ children }: LayoutProps): JSX.Element => {
@@ -25,15 +24,11 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
 
 export default Layout;
 
-export const withLayout = <T extends Record<string, unknown> & AppProviderProps>(
-	Component: FunctionComponent<T>
-) => {
+export const withLayout = <T extends Record<string, unknown>>(Component: FunctionComponent<T>) => {
 	return function withLayoutComponent(props: T): JSX.Element {
 		return (
 			<Layout>
-				<AppProvider course={props.course} courses={props.courses} instructors={props.instructors}>
-					<Component {...props} />
-				</AppProvider>
+				<Component {...props} />
 			</Layout>
 		);
 	};
